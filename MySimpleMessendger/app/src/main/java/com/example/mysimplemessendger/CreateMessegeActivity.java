@@ -17,8 +17,11 @@ public class CreateMessegeActivity extends AppCompatActivity {
     public void onSendMessege(View w){
         EditText messegeView = (EditText)findViewById(R.id.messege);
         String messegeText = messegeView.getText().toString();
-        Intent intent = new Intent(this, ReceiveMessegeActivity.class);
-        intent.putExtra(ReceiveMessegeActivity.EXTRA_MESSEGE, messegeText);
+        //Intent intent = new Intent(this, ReceiveMessegeActivity.class);
+        //intent.putExtra(ReceiveMessegeActivity.EXTRA_MESSEGE, messegeText);
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plane");
+        intent.putExtra(Intent.EXTRA_TEXT, messegeText);
         startActivity(intent);
 
     }
