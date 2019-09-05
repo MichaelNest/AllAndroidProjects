@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Welcome Тренинг</string>
+    <string name="bug_discription">Это настоящий Жук</string>
+    <string name="welcome">Привет!!</string>
+</resources>
